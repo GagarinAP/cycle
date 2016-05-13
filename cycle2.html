@@ -139,7 +139,105 @@
 			sum += i*i;				
 		}
 		document.write(sum);*/
-
+		/*#15
+		var a = parseFloat(prompt("Enter digit A:"));
+		var b = parseFloat(prompt("Enter digit B:"));
+		var ainb = 1;
+		if(parseInt(a) != a){
+			alert("B < 0");
+		}
+		else{
+			for(var i = 0; i < b; ++i){			
+				ainb *= a;
+			}
+			document.write(ainb);
+		}*/
+		/*#16
+		var N = parseInt(prompt("Enter N senokosilok:"));
+		var M = parseInt(prompt("Enter M rabotu minute pervoi kosilki:"));
+		var sum = M;
+		for(var i = 1; i < N; ++i){			
+			sum += (M += 10);
+		}
+		document.write(sum + " minutes");*/
+		/*#17
+		var N = parseInt(prompt("Enter N ychashuxsia:"));
+		var arr = [];
+		var digit = 0;
+		var average = 0;		
+		for(var i = 0; i < N; ++i){	
+			digit = prompt("Enter rost:");
+			arr.push(parseInt(digit));				
+		}
+		for(var i = 0; i < N; ++i){	
+			document.write(arr[i] + " sm<br />");
+			average += (arr[i] / N);
+		}
+		document.write("Seredniu " + average + " sm");*/
+		/*#18
+		var N = parseInt(prompt("Enter digit:"));
+		var j = 0;
+		for(var i = 0; i < N; ++i){	
+			if(i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0){
+				j++;
+			}			
+		}
+		document.write(j);*/
+		/*#19
+		var sum = 0;
+		for(var i = 10; i < 100; ++i){	
+			for(var j = 10; j < 100; ++j){
+				sum = i + "" + j;
+				if(parseInt(sum) % (i*j) == 0){
+					document.write(j + " " + i + "<br />");
+				}		
+			}	
+		}*/	
+		/*#20
+		var ab = 0;
+		var ba = 0;
+		for(var i = 10; i < 100; ++i){	
+			for(var j = 10; j < 100; ++j){
+				ab = i + "" + j;
+				ba = j + "" + i;
+				if(parseInt(ab) % 99 == 0 && parseInt(ba) % 49 == 0){
+					document.write(ab + " " + ba + "<br />");
+				}		
+			}	
+		}*/	
+		/*#21
+		var N = parseInt(prompt("Enter digit:"));
+		var sum = 0;
+		var j = 2;
+		for(var i = 1; i < N; i++){	
+			j*=j;			
+			sum += 1/j;						
+		}
+		document.write(sum);*/
+		/*#22
+		var N = parseInt(prompt("Enter digit:"));
+		var sum = 0;		
+		for(var i = 1; i <= N; i++){						
+			sum += 1/i;						
+		}
+		document.write(sum);*/		
+		/*#23
+		var sum = 1;		
+		for(var i = 1; i <= 10; i++){						
+			sum += Math.pow(2,i);						
+		}
+		document.write("1+2+4+8+...2v10 = " + sum);*/
+		/*24
+		var sum = 1;
+		var dob = 1;			
+		for(var i = 1; i < 2; i++){
+			for(var j = 1; j <= 10; j++){					
+				sum += i + j;
+				dob *= sum;			
+			}	
+			document.write(dob+"<br />");		
+		}*/
+		
 	</script>		
 </body>
 </html>	    				
