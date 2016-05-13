@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*#1
+		for (var i = 10; i < 20; ++i){
+			document.write(i + "*" + i + " = " + i*i + "<br />");
+		}*/
+		/*#2
+		var digit = Number(parseInt(prompt("Enter digit:")));	
+		var sum = 0;
+		for (var i = 0; i < digit; ++i){
+			sum += i;			
+		}
+		document.write(sum);*/ 
+		/*#3
+		var digit = Number(parseInt(prompt("Enter digit:")));	
+		var sum = 1;
+		for (var i = 1; i < digit; ++i){
+			sum *= i;			
+		}
+		document.write(sum);*/
+		/*#4
+		var arr = [];
+		var digit = 0;
+		while(digit = prompt("Enter digit q-quit:")){
+			if ( digit === 'q') {
+				break;
+			}
+			arr.push(parseInt(digit));
+		}
+		var z = 0;
+		var m = 0;
+		var zm = 0;
+		for(var i = 0; i < arr.length; ++i){
+			if(arr[i] < 0) ++z;
+			if(arr[i] > 0) ++m;
+			if(arr[i] == 0) ++zm;
+		}
+		document.write(z + " < 0 " + m + " > 0 " + zm + " = 0");*/
+		/*#5	
+		function convertation(koef, vel){
+			var arr = [];
+			arr.push(koef);
+			for(var i = 1; i < 10; ++i){					
+					arr.push(i*koef);				
+			}
+			for(var i = 1; i < 10; ++i){
+				document.write(arr[i] + vel + "<br />");
+			}
+		}
+		var digit = Number(parseInt(prompt("Enter digit 0..8:")));
+		switch(digit){
+			case 0: convertation(2.1366, "м"); break;
+			case 1: convertation(2.5, "см");break;
+			case 2: convertation(0.3048, "м");break;
+			case 3: convertation(3.7325, "г");break;
+			case 4: convertation(29.86, "г");break;
+			case 5: convertation(0.40951, "кг");break;
+			case 6: convertation(0.7112, "м");break;
+			case 7: convertation(4.2657, "г");break;
+			case 8: convertation(25.3995, "мм");break;
+			deafult: document.write("error digit");break;
+		}*/
+		/*#6
+		var vklad = Number(parseFloat(prompt("Enter sum vklad:")));
+		var year = Number(parseInt(prompt("Enter year:")));		
+		for(var i = 1; i <= year; ++i){
+			vklad += i * vklad * 0.03;
+		}
+		document.write(vklad);*/
+		/*#7
+		var arr = [];
+		var digit = 0;
+		for(var i = 0; i < 20; ++i){
+			digit = prompt("Enter digit q-quit:");
+			arr.push(parseInt(digit));
+		}
+		for(var i = 0; i < 20; i+=2){
+			if(arr[i] > arr[i+1]){
+				document.write(arr[i] + " > " + arr[i+1] + "<br />");
+			}
+			else{
+				document.write(arr[i] + " < " + arr[i+1] + "<br />");
+			}
+		}*/
+		/*#8
+		for(var i = 20; i < 50; ++i){
+			if((i % 3) == 0 && (i % 5) !== 0){
+				document.write(i+"<br />");				
+			}
+		}*/
+		/*#9
+		for(var i = 35; i < 87; ++i){
+			if((i % 7) == 1 || (i % 7) == 2 || (i % 7) == 5){
+				document.write(i+"<br />");				
+			}
+		}*/
+		/*#10
+		var sum = 0;
+		for(var i = 1; i < 50; ++i){
+			if((i % 5) == 0 || (i % 7) == 0){
+				sum += i;				
+			}
+		}
+		document.write(sum);*/	
+		/*#11
+		for(var i = 10; i < 99; ++i){
+			if((i % 4) == 0){
+				if(!(i % 6 == 0)){
+					document.write(i+"<br />");
+				}				
+			}
+		}*/
+		/*#12
+		var sum = 1;
+		for(var i = 11; i < 100; i+=2){
+			if((i % 13) == 0){
+				sum *= i;			
+			}
+		}
+		document.write(sum);*/
+		/*#13
+		var sum = 0;
+		for(var i = 100; i < 200; ++i){
+			if((i % 17) == 0){
+				sum += i;			
+			}
+		}
+		document.write(sum);*/
+		/*#14
+		var sum = 0;
+		var digit = Number(parseInt(prompt("Enter digit:")));
+		for(var i = 1; i < digit; ++i){			
+			sum += i*i;				
+		}
+		document.write(sum);*/
+		/*#15
+		var a = parseFloat(prompt("Enter digit A:"));
+		var b = parseFloat(prompt("Enter digit B:"));
+		var ainb = 1;
+		if(parseInt(a) != a){
+			alert("B < 0");
+		}
+		else{
+			for(var i = 0; i < b; ++i){			
+				ainb *= a;
+			}
+			document.write(ainb);
+		}*/
+		/*#16
+		var N = parseInt(prompt("Enter N senokosilok:"));
+		var M = parseInt(prompt("Enter M rabotu minute pervoi kosilki:"));
+		var sum = M;
+		for(var i = 1; i < N; ++i){			
+			sum += (M += 10);
+		}
+		document.write(sum + " minutes");*/
+		/*#17
+		var N = parseInt(prompt("Enter N ychashuxsia:"));
+		var arr = [];
+		var digit = 0;
+		var average = 0;		
+		for(var i = 0; i < N; ++i){	
+			digit = prompt("Enter rost:");
+			arr.push(parseInt(digit));				
+		}
+		for(var i = 0; i < N; ++i){	
+			document.write(arr[i] + " sm<br />");
+			average += (arr[i] / N);
+		}
+		document.write("Seredniu " + average + " sm");*/
+		/*#18
+		var N = parseInt(prompt("Enter digit:"));
+		var j = 0;
+		for(var i = 0; i < N; ++i){	
+			if(i % 2 !== 0 && i % 3 !== 0 && i % 5 !== 0){
+				j++;
+			}			
+		}
+		document.write(j);*/
+		/*#19
+		var sum = 0;
+		for(var i = 10; i < 100; ++i){	
+			for(var j = 10; j < 100; ++j){
+				sum = i + "" + j;
+				if(parseInt(sum) % (i*j) == 0){
+					document.write(j + " " + i + "<br />");
+				}		
+			}	
+		}*/	
+		/*#20
+		var ab = 0;
+		var ba = 0;
+		for(var i = 10; i < 100; ++i){	
+			for(var j = 10; j < 100; ++j){
+				ab = i + "" + j;
+				ba = j + "" + i;
+				if(parseInt(ab) % 99 == 0 && parseInt(ba) % 49 == 0){
+					document.write(ab + " " + ba + "<br />");
+				}		
+			}	
+		}*/	
+		/*#21
+		var N = parseInt(prompt("Enter digit:"));
+		var sum = 0;
+		var j = 2;
+		for(var i = 1; i < N; i++){	
+			j*=j;			
+			sum += 1/j;						
+		}
+		document.write(sum);*/
+		/*#22
+		var N = parseInt(prompt("Enter digit:"));
+		var sum = 0;		
+		for(var i = 1; i <= N; i++){						
+			sum += 1/i;						
+		}
+		document.write(sum);*/		
+		/*#23
+		var sum = 1;		
+		for(var i = 1; i <= 10; i++){						
+			sum += Math.pow(2,i);						
+		}
+		document.write("1+2+4+8+...2v10 = " + sum);*/
+		/*24
+		var sum = 1;
+		var dob = 1;			
+		for(var i = 1; i < 2; i++){
+			for(var j = 1; j <= 10; j++){					
+				sum += i + j;
+				dob *= sum;			
+			}	
+			document.write(dob+"<br />");		
+		}*/
+		
+	</script>		
+</body>
+</html>	    				
+	
